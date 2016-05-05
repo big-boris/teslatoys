@@ -1,0 +1,25 @@
+{
+  "name": "teslatoys",
+  "version": "1.0.0",
+  "description": "Giroskutery Tesla Toys",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/big-boris/teslatoys.git"
+  },
+  "author": "big-boris",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^2.2.3",
+    "normalize.css": "^4.1.1"
+  }
+}
