@@ -52,8 +52,8 @@ gulp.task('libs', function() {
   gulp.src(nm+'jquery/dist/jquery.min.js')
       .pipe(gulp.dest('./builds/dist/libs/jquery/'));
 
-  gulp.src(nm+'/normalize.css/normalize.css')
-      .pipe(gulp.dest('./builds/dist/libs/normalize'));
+  // gulp.src(nm+'/normalize.css/normalize.css')
+  //     .pipe(gulp.dest('./builds/dist/libs/normalize'));
 
   gulp.src('builds/dev/libs/**/*.*')
       .pipe(gulp.dest('./builds/dist/libs/'));
