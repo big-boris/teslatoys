@@ -5,3 +5,17 @@ html {
   background: #ffffff;
   color: #444444;
 }
+.top__img {
+  width: 100%;
+  height: 450px;
+  background: url('../img/top.jpg') center center no-repeat;
+  background-size: cover;
+}
+.top__title {
+  font-size: 48px;
+  color: #FEFEFE;
+}
+.top__subtitle {
+  font-size: 28px;
+  color: #FEFEFE; 
+}

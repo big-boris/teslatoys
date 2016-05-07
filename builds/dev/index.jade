@@ -16,12 +16,71 @@ html(lang="ru")
     body
         .uk-grid(data-uk-grid-margin)
             .uk-width-1-1
-                img(src='img/top.jpg' alt='Гироскутеры TeslaToys' width='100%')
+                .top__img.uk-text-center.uk-vertical-align
+                    .uk-vertical-align-bottom.uk-width-1-2
+                        h1.uk-heading-large.uk-text-bold.top__title
+                            | Гироскутеры TeslaToys
+                        p.top__subtitle.uk-margin-large-bottom
+                            | Выбери свой индивидуальный транспорт
+                //- img(src='img/top.jpg' alt='Гироскутеры TeslaToys' width='100%')
         .uk-container.uk-container-center.uk-margin-top.uk-margin-large-bottom
             .uk-grid(data-uk-grid-margin)
                 .uk-width-1-1.uk-text-center
-                    h1.uk-heading-large Здесь можно заказать гироскутеры TeslaToys
-                    p.uk-text-large Некоторый текст про гироскутеры
+                    h1.uk-heading-medium Основные преимущества гироскутеров
+                .uk-width-medium-1-3
+                    .uk-grid
+                        .uk-width-1-6
+                            i.uk-icon-cog.uk-icon-large.uk-text-primary
+                        .uk-width-5-6
+                            h3.uk-h2 Надежность
+                            p.uk-text-large
+                                | Надежная конструкция и невероятная прочность 
+                                | благодаря качественным материалам
+                .uk-width-medium-1-3
+                    .uk-grid
+                        .uk-width-1-6
+                            i.uk-icon-smile-o.uk-icon-large.uk-text-primary
+                        .uk-width-5-6
+                            h3.uk-h2 Удобство
+                            p.uk-text-large
+                                | Комфортная скорость передвижения, 
+                                | удобство и простота управления
+                .uk-width-medium-1-3
+                    .uk-grid
+                        .uk-width-1-6
+                            i.uk-icon-suitcase.uk-icon-large.uk-text-primary
+                        .uk-width-5-6
+                            h3.uk-h2 Компактность
+                            p.uk-text-large
+                                | Занимает немного места, обеспечивает 
+                                | удобное хранение и транспортировку
+                .uk-width-medium-1-3
+                    .uk-grid
+                        .uk-width-1-6
+                            i.uk-icon-child.uk-icon-large.uk-text-primary
+                        .uk-width-5-6
+                            h3.uk-h2 Экологичность
+                            p.uk-text-large
+                                | Работает на электрической тяге, не 
+                                | загрязняет окружающую среду
+                .uk-width-medium-1-3
+                    .uk-grid
+                        .uk-width-1-6
+                            i.uk-icon-plug.uk-icon-large.uk-text-primary
+                        .uk-width-5-6
+                            h3.uk-h2 Быстрая зарядка
+                            p.uk-text-large
+                                | Время полной зарядки от двух до трех 
+                                | часов от любой зарядки 220V
+                .uk-width-medium-1-3
+                    .uk-grid
+                        .uk-width-1-6
+                            i.uk-icon-eye.uk-icon-large.uk-text-primary
+                        .uk-width-5-6
+                            h3.uk-h2 Ходовые огни
+                            p.uk-text-large
+                                | Обеспечивают безопасное катание 
+                                | в темное время суток
             
             hr.uk-grid-divider
             //- First product unit
@@ -37,9 +96,9 @@ html(lang="ru")
                                 li.uk-margin-small-left.uk-margin-small-right
                                     a(href='javascript:void(0);')
                                         img(src="img/BD-S006/BD-S006-thumb-white.jpg", alt="")
-                                li.uk-margin-small-left.uk-margin-small-right
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S006/BD-S006-thumb-gold.jpg", alt="")
+                                //- li.uk-margin-small-left.uk-margin-small-right
+                                //-     a(href='javascript:void(0);')
+                                //-         img(src="img/BD-S006/BD-S006-thumb-gold.jpg", alt="")
                                 li
                                     a(href='javascript:void(0);')
                                         img(src="img/BD-S006/BD-S006-thumb-red.jpg", alt="")
@@ -265,5 +324,5 @@ html(lang="ru")
                             dd белый+синий
                     a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
 
-        script(src="libs/jquery/jquery.js")
+        script(src="libs/jquery/jquery.min.js")
         script(src="libs/uikit/js_uikit/uikit.min.js")
