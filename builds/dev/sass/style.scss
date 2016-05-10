@@ -1,5 +1,5 @@
 html {
-  font: normal 14px / 20px 'roboto_regular', Helvetica, Arial, sans-serif;
+  font: normal 14px / 20px 'roboto-regular', Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   background: #ffffff;
@@ -13,13 +13,24 @@ html {
 }
 .top__title {
   font-size: 48px;
+  line-height: 1.2;
   color: #FEFEFE;
 }
 .top__subtitle {
   font-size: 28px;
+  line-height: 1.2;
   color: #FEFEFE;
 }
 .product__img-thumb {
   width: 80px;
   height: 80px;
+}
+.footer {
+  // background-color: #ECF9FF;
+  height: 70px;
+  line-height: 70px;
+  padding-right: 25px;
+}
+.footer__company {
+  font: normal 36px/70px 'helvetica_neue_cyr-medium';
 }

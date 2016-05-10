@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'roboto_bold';
+  font-family: 'roboto-bold';
   src: url('../fonts/RobotoBold.eot');
   src: url('../fonts/RobotoBold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/RobotoBold.woff') format('woff'),
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'roboto_light';
+  font-family: 'roboto-light';
   src: url('../fonts/RobotoLight.eot');
   src: url('../fonts/RobotoLight.eot?#iefix') format('embedded-opentype'),
     url('../fonts/RobotoLight.woff') format('woff'),
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: 'roboto_medium';
+  font-family: 'roboto-medium';
   src: url('../fonts/RobotoMedium.eot');
   src: url('../fonts/RobotoMedium.eot?#iefix') format('embedded-opentype'),
     url('../fonts/RobotoMedium.woff2') format('woff2'),
@@ -30,11 +30,41 @@
 }
 
 @font-face {
-  font-family: 'roboto_regular';
+  font-family: 'roboto-regular';
   src: url('../fonts/RobotoRegular.eot');
   src: url('../fonts/RobotoRegular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/RobotoRegular.woff') format('woff'),
     url('../fonts/RobotoRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neue_cyr-medium';
+  src: url('../fonts/HelveticaMedium.eot');
+  src: url('../fonts/HelveticaMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaMedium.woff') format('woff'),
+    url('../fonts/HelveticaMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neue_cyr-regular';
+  src: url('../fonts/HelveticaRegular.eot');
+  src: url('../fonts/HelveticaRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaRegular.woff') format('woff'),
+    url('../fonts/HelveticaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neue_cyr-bold';
+  src: url('../fonts/HelveticaBold.eot');
+  src: url('../fonts/HelveticaBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaBold.woff') format('woff'),
+    url('../fonts/HelveticaBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
