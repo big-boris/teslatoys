@@ -25,12 +25,24 @@ html {
   width: 80px;
   height: 80px;
 }
+.map {
+  margin: 36px auto;
+}
 .footer {
   // background-color: #ECF9FF;
-  height: 70px;
-  line-height: 70px;
-  padding-right: 25px;
+  height: 100%;
+}
+.footer__promotext {
+  padding-top: 14px;
 }
 .footer__company {
-  font: normal 36px/70px 'helvetica_neue_cyr-medium';
+  font: normal 36px 'helvetica_neue_cyr-medium';
+}
+@media (max-width: 768px) {
+  .footer__company {
+    padding-top: 14px;
+  }
+}
+.footer__copyright {
+  padding-top: 14px;
 }
