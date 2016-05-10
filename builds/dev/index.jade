@@ -10,6 +10,7 @@ html(lang="ru")
         meta(name='description' content='Заказать в кафе Сиеста пицца Нахабино доставка еды заказать')
         title= pageTitle
         link(rel="stylesheet" href="libs/uikit/uikit.css")
+        link(rel="stylesheet" href="libs/bxslider/bxslider.css")
         link(rel="stylesheet" href="css/style.css")
         //[if lt IE 9]>
             <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script> <![endif]
@@ -34,7 +35,7 @@ html(lang="ru")
                         .uk-width-5-6
                             h3.uk-h2 Надежность
                             p.uk-text-large
-                                | Надежная конструкция и невероятная прочность 
+                                | Надежная конструкция и невероятная прочность
                                 | благодаря качественным материалам
                 .uk-width-medium-1-3
                     .uk-grid
@@ -43,7 +44,7 @@ html(lang="ru")
                         .uk-width-5-6
                             h3.uk-h2 Удобство
                             p.uk-text-large
-                                | Комфортная скорость передвижения, 
+                                | Комфортная скорость передвижения,
                                 | удобство и простота управления
                 .uk-width-medium-1-3
                     .uk-grid
@@ -52,7 +53,7 @@ html(lang="ru")
                         .uk-width-5-6
                             h3.uk-h2 Компактность
                             p.uk-text-large
-                                | Занимает немного места, обеспечивает 
+                                | Занимает немного места, обеспечивает
                                 | удобное хранение и транспортировку
                 .uk-width-medium-1-3
                     .uk-grid
@@ -61,7 +62,7 @@ html(lang="ru")
                         .uk-width-5-6
                             h3.uk-h2 Экологичность
                             p.uk-text-large
-                                | Работает на электрической тяге, не 
+                                | Работает на электрической тяге, не
                                 | загрязняет окружающую среду
                 .uk-width-medium-1-3
                     .uk-grid
@@ -70,8 +71,8 @@ html(lang="ru")
                         .uk-width-5-6
                             h3.uk-h2 Быстрая зарядка
                             p.uk-text-large
-                                | Время полной зарядки от двух до трех 
-                                | часов от любой зарядки 220V
+                                | Время полной зарядки от двух до трех
+                                | часов от любой розетки 220V
                 .uk-width-medium-1-3
                     .uk-grid
                         .uk-width-1-6
@@ -79,23 +80,41 @@ html(lang="ru")
                         .uk-width-5-6
                             h3.uk-h2 Ходовые огни
                             p.uk-text-large
-                                | Обеспечивают безопасное катание 
+                                | Обеспечивают безопасное катание
                                 | в темное время суток
-            
+
             hr.uk-grid-divider
             //- First product unit
             .uk-grid(data-uk-grid-margin)
                 .uk-width-medium-1-2
-                    img(src='img/BD-S006/BD-S006-black.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
+                    ul#product1.bxslider
+                        li
+                            img(src="img/BD-S006/BD-S006-black.jpg", alt="")
+                        li
+                            img(src="img/BD-S006/BD-S006-gold.jpg", alt="")
+                        li
+                            img(src="img/BD-S006/BD-S006-red.jpg", alt="")
+                        li
+                            img(src="img/BD-S006/BD-S006-white.jpg", alt="")
+                    //- img(src='img/BD-S006/BD-S006-black.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
                     .uk-grid(data-uk-grid-margin)
                         .uk-margin-small-top.uk-container-center
-                            ul.uk-thumbnav
-                                li
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S006/BD-S006-thumb-black.jpg", alt="")
-                                li.uk-margin-small-left.uk-margin-small-right
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S006/BD-S006-thumb-white.jpg", alt="")
+                            .bx-pager
+                                a(href="javascript:void(0);", data-slide-index="0")
+                                    img.product__img-thumb(src="img/BD-S006/BD-S006-black.jpg", alt="")
+                                a(href="javascript:void(0);", data-slide-index="1")
+                                    img.product__img-thumb(src="img/BD-S006/BD-S006-gold.jpg", alt="")
+                                a(href="javascript:void(0);", data-slide-index="2")
+                                    img.product__img-thumb(src="img/BD-S006/BD-S006-red.jpg", alt="")
+                                a(href="javascript:void(0);", data-slide-index="3")
+                                    img.product__img-thumb(src="img/BD-S006/BD-S006-white.jpg", alt="")
+                            //- ul.uk-thumbnav
+                            //-     li
+                            //-         a(href='javascript:void(0);')
+                            //-             img(src="img/BD-S006/BD-S006-thumb-black.jpg", alt="")
+                            //-     li.uk-margin-small-left.uk-margin-small-right
+                            //-         a(href='javascript:void(0);')
+                            //-             img(src="img/BD-S006/BD-S006-thumb-white.jpg", alt="")
                                 //- li.uk-margin-small-left.uk-margin-small-right
                                 //-     a(href='javascript:void(0);')
                                 //-         img(src="img/BD-S006/BD-S006-thumb-gold.jpg", alt="")
@@ -122,27 +141,23 @@ html(lang="ru")
                         dt.uk-margin-small-top Цвет:
                             dd черный, белый, золото, красный
                     a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
-            
+
             hr.uk-grid-divider
             //- Second product unit
             .uk-grid(data-uk-grid-margin)
                 .uk-width-medium-1-2
-                    img(src='img/BD-S006B/BD-S006B-blue.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
+                    ul#product2.bxslider
+                        li
+                            img(src="img/BD-S006B/BD-S006B-blue.jpg", alt="")
+                        li
+                            img(src="img/BD-S006B/BD-S006B-blue2.jpg", alt="")
                     .uk-grid(data-uk-grid-margin)
                         .uk-margin-small-top.uk-container-center
-                            ul.uk-thumbnav
-                                li
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S006B/BD-S006B-thumb-blue.jpg", alt="")
-                                li.uk-margin-small-left.uk-margin-small-right
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S006B/BD-S006B-thumb-blue2.jpg", alt="")
-                                //- li.uk-margin-small-left.uk-margin-small-right
-                                //-     a(href='javascript:void(0);')
-                                //-         img(src="img/BD-S006/BD-S006-thumb-gold.jpg", alt="")
-                                //- li
-                                //-     a(href='javascript:void(0);')
-                                //-         img(src="img/BD-S006/BD-S006-thumb-red.jpg", alt="")
+                            .bx-pager
+                                a(href="javascript:void(0);", data-slide-index="0")
+                                    img.product__img-thumb(src="img/BD-S006B/BD-S006B-blue.jpg", alt="")
+                                a(href="javascript:void(0);", data-slide-index="1")
+                                    img.product__img-thumb(src="img/BD-S006B/BD-S006B-blue2.jpg", alt="")
                 .uk-width-medium-1-2
                     h2.uk-text-bold Модель BD-S006B
                     p.uk-text-large Цена 24 900 рублей
@@ -209,22 +224,14 @@ html(lang="ru")
             //- Fourth product unit
             .uk-grid(data-uk-grid-margin)
                 .uk-width-medium-1-2
-                    img(src='img/BD-S008/BD-S008_01.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
+                    ul#product4.bxslider
+                        li
+                            img(src="img/BD-S008/BD-S008.jpg", alt="")
                     .uk-grid(data-uk-grid-margin)
                         .uk-margin-small-top.uk-container-center
-                            ul.uk-thumbnav
-                                li
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S008/BD-S008-thumb_01.jpg", alt="")
-                                //- li.uk-margin-small-left.uk-margin-small-right
-                                //-     a(href='javascript:void(0);')
-                                //-         img(src="img/BD-S006/BD-S006-thumb-white.jpg", alt="")
-                                //- li.uk-margin-small-left.uk-margin-small-right
-                                //-     a(href='javascript:void(0);')
-                                //-         img(src="img/BD-S006/BD-S006-thumb-gold.jpg", alt="")
-                                //- li
-                                //-     a(href='javascript:void(0);')
-                                //-         img(src="img/BD-S006/BD-S006-thumb-red.jpg", alt="")
+                            .bx-pager
+                                a(href="javascript:void(0);", data-slide-index="0")
+                                    img.product__img-thumb(src="img/BD-S008/BD-S008.jpg", alt="")
                 .uk-width-medium-1-2
                     h2.uk-text-bold Модель BD-S008
                     p.uk-text-large Цена 26 900 рублей
@@ -250,22 +257,22 @@ html(lang="ru")
             //- Fifth product unit
             .uk-grid(data-uk-grid-margin)
                 .uk-width-medium-1-2
-                    img(src='img/BD-S010/BD-S010-black.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
+                    ul#product5.bxslider
+                        li
+                            img(src="img/BD-S010/BD-S010-black.jpg", alt="")
+                        li
+                            img(src="img/BD-S010/BD-S010-graffity.jpg", alt="")
+                        li
+                            img(src="img/BD-S010/BD-S010-red.jpg", alt="")
                     .uk-grid(data-uk-grid-margin)
                         .uk-margin-small-top.uk-container-center
-                            ul.uk-thumbnav
-                                li
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S010/BD-S010-thumb-black.jpg", alt="")
-                                li.uk-margin-small-left.uk-margin-small-right
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S010/BD-S010-thumb-red.jpg", alt="")
-                                li
-                                    a(href='javascript:void(0);')
-                                        img(src="img/BD-S010/BD-S010-thumb-graffity.jpg", alt="")
-                                //- li
-                                //-     a(href='javascript:void(0);')
-                                //-         img(src="img/BD-S006/BD-S006-thumb-red.jpg", alt="")
+                            .bx-pager
+                                a(href="javascript:void(0);", data-slide-index="0")
+                                    img.product__img-thumb(src="img/BD-S010/BD-S010-black.jpg", alt="")
+                                a(href="javascript:void(0);", data-slide-index="1")
+                                    img.product__img-thumb(src="img/BD-S010/BD-S010-graffity.jpg", alt="")
+                                a(href="javascript:void(0);", data-slide-index="2")
+                                    img.product__img-thumb(src="img/BD-S010/BD-S010-red.jpg", alt="")
                 .uk-width-medium-1-2
                     h2.uk-text-bold Модель BD-S010
                     p.uk-text-large Цена 27 900 рублей
@@ -324,5 +331,18 @@ html(lang="ru")
                             dd белый+синий
                     a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
 
+            footer.uk-grid(data-uk-grid-margin)
+                .uk-width-medium-1-3
+                    .footer__copyright.uk-text-center-medium
+                        | &#xa9; 2016
+                        strong &#160;teslatoys.ru&#160;
+                        | Все права защищены
+                .uk-width-medium-1-3
+                    .footer__company.uk-text-center TeslaToys
+                .uk-width-medium-1-3
+                    .footer__promotext.uk-text-right.uk-text-center-medium Лучшие гироскутеры по доступной цене
+
         script(src="libs/jquery/jquery.min.js")
         script(src="libs/uikit/js_uikit/uikit.min.js")
+        script(src="libs/bxslider/bxslider.js")
+        script(src="js/app.js")
