@@ -25,12 +25,18 @@ html {
   width: 80px;
   height: 80px;
 }
+.delivery {
+  font-size: 16px;
+  line-height: 1.5;
+}
 .map {
   margin: 36px auto;
 }
 .footer {
-  // background-color: #ECF9FF;
-  height: 100%;
+  background-color: #ECF9FF;
+  height: auto;
+  padding: 16px 28px 16px 0px;
+  margin-left: 0px;
 }
 .footer__promotext {
   padding-top: 14px;
