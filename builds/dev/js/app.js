@@ -34,6 +34,8 @@ $('.js-submitForm').click(function(event) {
     $('.js-submitForm').addClass('uk-modal-close');
     name_orderform.val('');
     phone_orderform.val('');
+    window.location = "/thanks.html";
+    // location.href = "/thanks.html"; Тоже рабочий вариант
   } else {  $(name_orderform).addClass("uk-form-danger");
             $(phone_orderform).addClass("uk-form-danger");
         }
