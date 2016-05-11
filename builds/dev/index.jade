@@ -25,7 +25,7 @@ html(lang="ru")
                             .uk-form-row
                                 input.order_mdlform-control#name_orderform(type='text', placeholder='Введите Ваше имя')
                             .uk-form-row
-                                input.order_mdlform-control#phone_orderform(type='text', placeholder='Введите Ваш телефон')
+                                input.order_mdlform-control#phone_orderform.phonemask(type='text', placeholder='Введите Ваш телефон')
                             .uk-form-row
                                 a.uk-button.uk-button-large.uk-button-primary.js-submitForm(href="javascript:void(0);") Оставить заявку
 
@@ -202,7 +202,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd синий+черный
-                    a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
 
             hr.uk-grid-divider
             //- Third product unit
@@ -243,7 +243,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd черный+серебро, черный+синий, черный+красный, черный+оранжевый
-                    a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
 
             hr.uk-grid-divider
             //- Fourth product unit
@@ -276,7 +276,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd черный+красный
-                    a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
 
             hr.uk-grid-divider
             //- Fifth product unit
@@ -315,7 +315,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd черный, красный, граффити
-                    a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
 
             hr.uk-grid-divider
             //- Sixth product unit
@@ -354,7 +354,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd белый+синий
-                    a.uk-button.uk-button-large.uk-button-primary(href="#") Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
 
             .delivery.uk-margin-large-top
                 h2.uk-h1.uk-text-center Доставка и оплата
@@ -382,5 +382,6 @@ html(lang="ru")
 
         script(src="libs/jquery/jquery.min.js")
         script(src="libs/uikit/js_uikit/uikit.min.js")
+        script(src="libs/maskedinput/jquery.maskedinput.min.js")
         script(src="libs/bxslider/bxslider.js")
         script(src="js/app.js")

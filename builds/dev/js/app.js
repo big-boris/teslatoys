@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $(".phonemask").mask("+7(999) 999-9999");
+
   $('#product1').bxSlider({
     mode: 'fade',
     pagerCustom: '.bx-pager',
