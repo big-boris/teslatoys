@@ -85,3 +85,9 @@ html {
 .order_mdlform-control {
   width: calc(100% - 40px);
 }
+.thanks__text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
