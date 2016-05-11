@@ -5,6 +5,16 @@ html {
   background: #ffffff;
   color: #444444;
 }
+.menu {
+    margin-bottom: 42px;
+}
+.menu__item {
+    display: inline-block;
+    // font-size: 26px;
+    // line-height: 1.3;
+    // margin: 0px 16px;
+    cursor: pointer;
+}
 .top__img {
   width: 100%;
   height: 450px;
@@ -51,4 +61,13 @@ html {
 }
 .footer__copyright {
   padding-top: 14px;
+}
+
+.order_mdlform-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 18px auto 28px !important;
+}
+.order_mdlform-control {
+  width: calc(100% - 40px);
 }

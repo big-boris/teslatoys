@@ -5703,6 +5703,9 @@ a.uk-thumbnail:focus {
   .uk-modal-dialog-large {
     width: 930px;
   }
+  .uk-modal-dialog-medium {
+    width: 400px;
+  }
 }
 @media (min-width: 1220px) {
   .uk-modal-dialog-large {
