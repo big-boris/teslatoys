@@ -1,4 +1,4 @@
--var pageTitle = "Гироскутеры TeslaToys заказать доставка"
+-var pageTitle = "TeslaToys - гироскутеры заказать с доставкой"
 
 doctype html
 html(lang="ru")
@@ -15,7 +15,7 @@ html(lang="ru")
         //[if lt IE 9]>
             <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script> <![endif]
     body
-        .uk-modal#modal_order_form
+        //- .uk-modal#modal_order_form
             .uk-modal-dialog.uk-modal-dialog-medium
                 a.uk-modal-close.uk-close
                 .order_mdlform-title.uk-text-center Оформить заявку
@@ -27,7 +27,7 @@ html(lang="ru")
                             .uk-form-row
                                 input.order_mdlform-control#phone_orderform.phonemask(type='text' name='phone' placeholder='Введите Ваш телефон')
                             .uk-form-row
-                                a.uk-button.uk-button-large.uk-button-primary.js-submitForm(href="javascript:void(0);") Оставить заявку
+                                input.uk-button.uk-button-large.uk-button-primary(type="submit" value="Оставить заявку")
 
         .uk-container.uk-container-center
             .uk-grid.menu
@@ -121,7 +121,6 @@ html(lang="ru")
                             img(src="img/BD-S006/BD-S006-red.jpg", alt="")
                         li
                             img(src="img/BD-S006/BD-S006-white.jpg", alt="")
-                    //- img(src='img/BD-S006/BD-S006-black.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
                     .uk-grid(data-uk-grid-margin)
                         .uk-margin-small-top.uk-container-center
                             .bx-pager
@@ -165,7 +164,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd черный, белый, золото, красный
-                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="zakaz_bds006.html") Заказать
 
             hr.uk-grid-divider
             //- Second product unit
@@ -202,11 +201,11 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd синий+черный
-                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="zakaz_bds006b.html") Заказать
 
-            hr.uk-grid-divider
+            //- hr.uk-grid-divider
             //- Third product unit
-            .uk-grid(data-uk-grid-margin)
+            //- .uk-grid(data-uk-grid-margin)
                 .uk-width-medium-1-2
                     img(src='img/BD-S006/BD-S006-black.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
                     .uk-grid(data-uk-grid-margin)
@@ -276,7 +275,7 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd черный+красный
-                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="zakaz_bds008.html") Заказать
 
             hr.uk-grid-divider
             //- Fifth product unit
@@ -315,11 +314,11 @@ html(lang="ru")
                             dd Li&ndash;On Samsung
                         dt.uk-margin-small-top Цвет:
                             dd черный, красный, граффити
-                    a.uk-button.uk-button-large.uk-button-primary(href="#modal_order_form" data-uk-modal) Заказать
+                    a.uk-button.uk-button-large.uk-button-primary(href="zakaz_bds010.html") Заказать
 
-            hr.uk-grid-divider
+            //- hr.uk-grid-divider
             //- Sixth product unit
-            .uk-grid(data-uk-grid-margin)
+            //- .uk-grid(data-uk-grid-margin)
                 .uk-width-medium-1-2
                     img(src='img/BD-S006/BD-S006-black.jpg' alt='Гироскутеры TeslaToys BD-S006' width='680' height='400')
                     .uk-grid(data-uk-grid-margin)
@@ -384,30 +383,30 @@ html(lang="ru")
 
         // Yandex.Metrika counter
         script(type='text/javascript').
-          (function (d, w, c) {
-          (w[c] = w[c] || []).push(function() {
-          try {
-          w.yaCounter37320600 = new Ya.Metrika({
-          id:37320600,
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true
-          });
-          } catch(e) { }
-          });
-          var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () { n.parentNode.insertBefore(s, n); };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
-          if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-          } else { f(); }
-          })(document, window, "yandex_metrika_callbacks");
+            (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+            try {
+            w.yaCounter37320600 = new Ya.Metrika({
+            id:37320600,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+            });
+            } catch(e) { }
+            });
+            var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
         noscript
-          div
-            img(src='https://mc.yandex.ru/watch/37320600', style='position:absolute; left:-9999px;', alt='')
+            div
+                img(src='https://mc.yandex.ru/watch/37320600', style='position:absolute; left:-9999px;', alt='')
         // /Yandex.Metrika counter
 
         script(src="libs/jquery/jquery.min.js")

@@ -1,0 +1,69 @@
+-var pageTitle = "Teslatoys - заказать гироскутер модель BD-S006"
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name='yandex-verification' content='6efe569acb95401e')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='description' content='Teslatoys Заказать гироскутеры с доставкой, модель BD-S006')
+        title= pageTitle
+        link(rel="stylesheet" href="libs/uikit/uikit.css")
+        link(rel="stylesheet" href="css/style.css")
+        //[if lt IE 9]>
+            <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script> <![endif]
+    body
+
+        .uk-width-medium-1-1.uk-width-small-1-1
+            .s__form__zakaz
+                .s__form__zakaz-title Заказать гироскутер BD-S006
+                //- .s__form__zakaz-subtitle Выберите способ оплаты
+                form.form__zakaz(action="")
+                    .uk-form.uk-form-stacked
+                        fieldset.uk-text-center
+                            .form__zakaz-title Оплатить курьеру при получении
+                            .uk-form-row
+                                label.uk-form-label.uk-text-left(for='name_form_zakaz') Введите Ваше имя
+                                input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#name_form_zakaz(type='text' name='name' placeholder='Ваше имя')
+                            .uk-form-row
+                                label.uk-form-label.uk-text-left(for='phone_form_zakaz') Введите Ваш телефон
+                                input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#phone_form_zakaz.phonemask(type='text' name='phone' placeholder='Ваш телефон')
+                            .uk-form-row
+                                input.uk-button.uk-button-large.uk-form-width-medium.uk-button-primary(type="submit" value="Оставить заявку")
+                //- .ya__money__frame
+                    .form__zakaz-title 2. Оплатить электронным переводом
+                    iframe(frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410014167571354&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D1%83%D1%82%D0%B5%D1%80%D0%B0+BD-S006&default-sum=22900&button-text=01&fio=on&mail=on&phone=on&address=on&successURL=spasibo.html" width="100%" height="198")
+
+        // Yandex.Metrika counter
+        script(type='text/javascript').
+            (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+            try {
+            w.yaCounter37320600 = new Ya.Metrika({
+            id:37320600,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+            });
+            } catch(e) { }
+            });
+            var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        noscript
+            div
+                img(src='https://mc.yandex.ru/watch/37320600', style='position:absolute; left:-9999px;', alt='')
+        // /Yandex.Metrika counter
+
+        script(src="libs/jquery/jquery.min.js")
+        script(src="libs/uikit/js_uikit/uikit.min.js")
+        script(src="libs/maskedinput/jquery.maskedinput.min.js")
+        script(src="js/form_valid.js")
