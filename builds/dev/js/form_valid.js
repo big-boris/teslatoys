@@ -10,10 +10,10 @@ $(document).ready(function(){
             $(phone_form_zakaz).addClass("alert");
             setTimeout(function() {
                 $(name_form_zakaz).removeClass("alert"),
-                $(phone_form_zakaz).removeClass("alert")
+                $(phone_form_zakaz).removeClass("alert");
             },3000);
-        };
-        event.preventDefault();
+            event.preventDefault();
+        }
     });
 
 });
