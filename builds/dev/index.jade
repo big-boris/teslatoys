@@ -28,27 +28,48 @@ html(lang="ru")
                                 input.order_mdlform-control#phone_orderform.phonemask(type='text' name='phone' placeholder='Введите Ваш телефон')
                             .uk-form-row
                                 input.uk-button.uk-button-large.uk-button-primary(type="submit" value="Оставить заявку")
+        
+        .menu
+            .uk-container.uk-container-center
+                .uk-grid(data-uk-grid-margin)
+                    .menu__title.uk-width-medium-1-4
+                        img(src="img/logo.png" alt="Teslatoys - гироскутеры с доставкой")
+                    .menu__nav.uk-width-medium-2-4.uk-hidden-small
+                        .menu__nav-item
+                            a(href='javascript:void(0);' onclick="myScrollTo('product_forscroll');") Гироскутеры
+                        .menu__nav-item
+                            a(href='javascript:void(0);' onclick="myScrollTo('delivery');") Доставка
+                        .menu__nav-item
+                            a(href='javascript:void(0);' onclick="myScrollTo('map');") Контакты
+                    .menu__phone.uk-width-medium-1-4
+                        span Закажите по телефону:
+                        br
+                        | 8 495 627-69-88
+
 
         .uk-container.uk-container-center
-            .uk-grid.menu
-                .menu__title.uk-width-medium-1-4.uk-text-center TeslaToys
-                .menu__nav.uk-width-medium-2-4.uk-text-center.uk-text-middle
-                    .menu__nav-item
-                        a(href='javascript:void(0);' onclick="myScrollTo('product_forscroll');") Гироскутеры
-                    .menu__nav-item.uk-margin-small-left.uk-margin-small-right
-                        a(href='javascript:void(0);' onclick="myScrollTo('delivery');") Доставка и оплата
-                    .menu__nav-item
-                        a(href='javascript:void(0);' onclick="myScrollTo('map');") Контакты
-                .menu__phone.uk-width-medium-1-4.uk-text-right.uk-text-center-medium.uk-text-large 8 495 627-69-88
-        .uk-grid(data-uk-grid-margin)
-            .uk-width-1-1
-                .top__img.uk-text-center.uk-vertical-align
-                    .uk-vertical-align-bottom.uk-width-1-1
-                        h1.top__title.uk-heading-large.uk-text-bold
-                            | Гироскутеры TeslaToys
-                        p.top__subtitle.uk-margin-large-bottom
-                            | Выбери свой индивидуальный транспорт
-                //- img(src='img/top.jpg' alt='Гироскутеры TeslaToys' width='100%')
+            .utp.uk-grid(data-uk-grid-margin)
+                .uk-width-large-1-2.uk-width-medium-1-1.uk-width-small-1-1
+                    .utp__img
+                        img(src="img/utp_img.jpg" alt="Teslatoys - гироскутеры с доставкой")
+                .uk-width-large-1-2.uk-width-medium-1-1.uk-width-small-1-1.utp__left
+                    .utp__subtitle Оригинальные
+                    .utp__title
+                        | ГИРО
+                        span СКУТЕРЫ
+                    .utp__subtitle
+                        | С доставкой
+                        br
+                        | по всей России
+                    .utp__present.utp__present-first Батарея:
+                        span.utp__present-batt &nbsp;Samsung
+                    .utp__present Гарантия:
+                        span.utp__present-guarbag &nbsp;1 год
+                    .utp__present Сумка:
+                        span.utp__present-guarbag &nbsp;В подарок
+
+
+
         .uk-container.uk-container-center.uk-margin-top.uk-margin-large-bottom
             .uk-grid(data-uk-grid-margin)
                 .uk-width-1-1.uk-text-center
