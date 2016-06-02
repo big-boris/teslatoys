@@ -17,7 +17,8 @@ gulp.task('js', function() {
 gulp.task('jade', function(){
   gulp.src('builds/dev/*.jade')
     .pipe(jade({
-        pretty: true
+        // pretty: true Dlya prostanovki Probelov a nizhe - dlya tabov
+        pretty: '\t'
     }))
     .pipe(gulp.dest('builds/dist/'))
 });

@@ -11,7 +11,7 @@ $(document).ready(function(){
             setTimeout(function() {
                 $(name_form_zakaz).removeClass("alert"),
                 $(phone_form_zakaz).removeClass("alert");
-            },3000);
+            },2000);
             event.preventDefault();
         }
     });

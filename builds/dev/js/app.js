@@ -2,27 +2,31 @@ $(document).ready(function(){
 
   $(".phonemask").mask("+7(999) 999-9999");
 
-  $('#product1').bxSlider({
+  $('#product-s006').bxSlider({
     mode: 'fade',
-    pagerCustom: '.bx-pager',
+    adaptiveHeight: true,
+    pagerCustom: '.bx-pager-s006',
     autoStart: false,
     controls: false
   });
-  $('#product2').bxSlider({
+  $('#product-s007').bxSlider({
     mode: 'fade',
-    pagerCustom: '.bx-pager',
+    adaptiveHeight: true,
+    pagerCustom: '.bx-pager-s007',
     autoStart: false,
     controls: false
   });
-  $('#product4').bxSlider({
+  $('#product-s008').bxSlider({
     mode: 'fade',
-    pagerCustom: '.bx-pager',
+    adaptiveHeight: true,
+    pagerCustom: '.bx-pager-s008',
     autoStart: false,
     controls: false
   });
-  $('#product5').bxSlider({
+  $('#product-s010').bxSlider({
     mode: 'fade',
-    pagerCustom: '.bx-pager',
+    adaptiveHeight: true,
+    pagerCustom: '.bx-pager-s010',
     autoStart: false,
     controls: false
   });
