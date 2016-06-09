@@ -17,7 +17,7 @@ html(lang="ru")
 
         .uk-width-medium-1-1.uk-width-small-1-1
             .s__form__zakaz
-                .s__form__zakaz-title Заказать гироскутер BD-S006
+                .s__form__zakaz-title Заказать гироскутер Smart 6.5&#8243; (BD-S006)
                 //- .s__form__zakaz-subtitle Выберите способ оплаты
                 form.form__zakaz(action="")
                     .uk-form.uk-form-stacked
@@ -32,28 +32,28 @@ html(lang="ru")
                             .uk-form-row
                                 input.uk-button.uk-button-large.uk-form-width-medium.uk-button-primary(type="submit" value="Оставить заявку")
                 //- .ya__money__frame
-                    .form__zakaz-title 2. Оплатить электронным переводом
-                    iframe(frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410014167571354&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D1%83%D1%82%D0%B5%D1%80%D0%B0+BD-S006&default-sum=22900&button-text=01&fio=on&mail=on&phone=on&address=on&successURL=spasibo.html" width="100%" height="198")
+                    //- .form__zakaz-title 2. Оплатить электронным переводом
+                    //- iframe(frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410014167571354&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D1%83%D1%82%D0%B5%D1%80%D0%B0+BD-S006&default-sum=22900&button-text=01&fio=on&mail=on&phone=on&address=on&successURL=spasibo.html" width="100%" height="198")
                 //- .ya__money__frame
-                    form(action='https://demomoney.yandex.ru/eshop.xml', method='post')
-                        // Обязательные поля
-                        input(name='shopId', value='151', type='hidden')
-                        input(name='scid', value='363', type='hidden')
-                        input(name='customerNumber', value='100500')
-                        input(name='sum', value='100')
-                        | Способ оплаты:
-                        br
-                        input(name='paymentType', value='PC', type='radio')
-                        | Оплата из кошелька в Яндекс.Деньгах
-                        br
-                        input(name='paymentType', value='AC', type='radio')
-                        | Оплата с произвольной банковской карты
-                        br
-                        input(name='paymentType', value='GP', type='radio')
-                        | Оплата наличными через кассы и терминалы
-                        br
-                        br
-                        input(type='submit', value='Заплатить')
+                    //- form(action='https://demomoney.yandex.ru/eshop.xml', method='post')
+                    //-     // Обязательные поля
+                    //-     input(name='shopId', value='151', type='hidden')
+                    //-     input(name='scid', value='363', type='hidden')
+                    //-     input(name='customerNumber', value='100500')
+                    //-     input(name='sum', value='100')
+                    //-     | Способ оплаты:
+                    //-     br
+                    //-     input(name='paymentType', value='PC', type='radio')
+                    //-     | Оплата из кошелька в Яндекс.Деньгах
+                    //-     br
+                    //-     input(name='paymentType', value='AC', type='radio')
+                    //-     | Оплата с произвольной банковской карты
+                    //-     br
+                    //-     input(name='paymentType', value='GP', type='radio')
+                    //-     | Оплата наличными через кассы и терминалы
+                    //-     br
+                    //-     br
+                    //-     input(type='submit', value='Заплатить')
                 .ya__money__frame
                     .form__zakaz-title 2. Оплатить электронным переводом
                     form(method='POST', action='https://money.yandex.ru/eshop.xml')
@@ -82,6 +82,16 @@ html(lang="ru")
                             input(name='paymentType', value='AC', type='radio')
                         label.lbl__paytype.lbl__paytype-webmoney(title='Со счета WebMoney')
                             input(name='paymentType', value='WM', type='radio')
+                        label.lbl__paytype.lbl__paytype-qiwi(title='Оплата со счета Qiwi')
+                            input(name='paymentType', value='WQ', type='radio')
+                        label.lbl__paytype.lbl__paytype-sberbank(title='Оплата через Сбербанк Онлайн')
+                            input(name='paymentType', value='SB', type='radio')
+                        label.lbl__paytype.lbl__paytype-alfabank(title='Оплата через Альфа-Клик')
+                            input(name='paymentType', value='AB', type='radio')
+                        label.lbl__paytype.lbl__paytype-psbank(title='Оплата со счета в Промсвязьбанке')
+                            input(name='paymentType', value='PB', type='radio')
+                        label.lbl__paytype.lbl__paytype-kuppiru(title='Оплата с помощью Куппи.ру')
+                            input(name='paymentType', value='QP', type='radio')
                         br
                         br
                         .uk-text-center

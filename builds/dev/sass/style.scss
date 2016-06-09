@@ -192,12 +192,15 @@ html {
 
 .s__form__zakaz {
   position: absolute;
-  top: 50%;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -20%);
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translateX(-50%);
   border: 2px solid #EFEFEF;
   padding: 30px;
-  margin-bottom: 36px;
+  margin: 36px auto;
 }
 
 .s__form__zakaz-title {
@@ -253,6 +256,7 @@ html {
 .lbl__paytype {
   display: inline-block;
   cursor: pointer;
+  margin: 6px 4px;
 }
 .lbl__paytype-card {
   display: inline-block;
@@ -271,6 +275,37 @@ html {
   background: url('../img/payment_ico/webmoney_ico.png') no-repeat;
   background-position: 18px 2px;
   width: 80px;
+  height: 20px;
+}
+.lbl__paytype-qiwi {
+  background: url('../img/payment_ico/qiwi_ico.png') no-repeat;
+  background-position: 21px center;
+  width: 80px;
+  height: 20px;
+}
+.lbl__paytype-sberbank {
+  background: url('../img/payment_ico/sberbank_ico.png') no-repeat;
+  background-size: 59px 17px;
+  background-position: 19px 2px;
+  width: 80px;
+  height: 20px;
+}
+.lbl__paytype-alfabank {
+  background: url('../img/payment_ico/alfabank_ico.png') no-repeat;
+  background-position: 18px 2px;
+  width: 80px;
+  height: 20px;
+}
+.lbl__paytype-psbank {
+  background: url('../img/payment_ico/psbank_ico.png') no-repeat;
+  background-position: 18px 2px;
+  width: 80px;
+  height: 20px;
+}
+.lbl__paytype-kuppiru {
+  background: url('../img/payment_ico/kuppiru_ico.png') no-repeat;
+  background-position: 20px 2px;
+  width: 84px;
   height: 20px;
 }
 
