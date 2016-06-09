@@ -31,6 +31,21 @@ $(document).ready(function(){
     controls: false
   });
 
+  $(function () {
+    $(window).scroll(function(){
+      if ( $(this).scrollTop() > 100 ) {
+        $('.scroll-to-top').fadeIn();
+      } else {
+        $('.scroll-to-top').fadeOut();
+      }
+    });
+
+    $('.scroll-to-top').click( function( e ) {
+      e.preventDefault();
+      $('html, body').animate( {scrollTop : 0}, 800 );
+    });
+  });
+
 });
 
 function myScrollTo(o) {
@@ -39,3 +54,18 @@ function myScrollTo(o) {
       scrollTop:t
   }, 1500);
 };
+
+// $(function () {
+//   $(window).scroll(function(){
+//     if ( $(this).scrollTop() > 100 ) {
+//       $('.scroll-to-top').fadeIn();
+//     } else {
+//       $('.scroll-to-top').fadeOut();
+//     }
+//   });
+
+//   $('.scroll-to-top').click( function( e ) {
+//     e.preventDefault();
+//     $('html, body').animate( {scrollTop : 0}, 800 );
+//   });
+// });
