@@ -24,17 +24,17 @@ html(lang="ru")
                         fieldset.uk-text-center
                             .form__zakaz-title Оплатить курьеру при получении
                             .uk-form-row
-                                label.uk-form-label.uk-text-left(for='name_form_zakaz') Введите Ваше имя
+                                label.form__zakaz-label.uk-text-left(for='name_form_zakaz') Введите Ваше имя
                                 input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#name_form_zakaz(type='text' name='name' placeholder='Ваше имя')
                             .uk-form-row
-                                label.uk-form-label.uk-text-left(for='phone_form_zakaz') Введите Ваш телефон
+                                label.form__zakaz-label.uk-text-left(for='phone_form_zakaz') Введите Ваш телефон
                                 input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#phone_form_zakaz.phonemask(type='text' name='phone' placeholder='Ваш телефон')
                             .uk-form-row
                                 input.uk-button.uk-button-large.uk-form-width-medium.uk-button-primary(type="submit" value="Оставить заявку")
-                .ya__money__frame
+                //- .ya__money__frame
                     .form__zakaz-title 2. Оплатить электронным переводом
                     iframe(frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410014167571354&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D1%83%D1%82%D0%B5%D1%80%D0%B0+BD-S006&default-sum=22900&button-text=01&fio=on&mail=on&phone=on&address=on&successURL=spasibo.html" width="100%" height="198")
-                .ya__money__frame
+                //- .ya__money__frame
                     form(action='https://demomoney.yandex.ru/eshop.xml', method='post')
                         // Обязательные поля
                         input(name='shopId', value='151', type='hidden')
@@ -55,34 +55,37 @@ html(lang="ru")
                         br
                         input(type='submit', value='Заплатить')
                 .ya__money__frame
+                    .form__zakaz-title 2. Оплатить электронным переводом
                     form(method='POST', action='https://money.yandex.ru/eshop.xml')
                         input(type='hidden', name='shopId', value='впишите-сюда-значение-своего-shopId')
                         input(type='hidden', name='scid', value='впишите-сюда-значение-своего-scid')
 
-                        label.uk-form-label.uk-text-left(for='ya_form_clientid') Идентификатор клиента
-                        input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_clientid(type='text', name='customerNumber', size='64', value='BD-S006')
+                        label.form__zakaz-label.uk-text-left(for='ya_form_clientid') Идентификатор клиента
+                        input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_clientid(type='hidden', name='customerNumber', value='BD-S006')
 
-                        label.uk-form-label.uk-text-left(for='ya_form_summa') Сумма (руб.)
-                        input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_summa(type='text', name='sum', value='22900')
+                        label.form__zakaz-label.uk-text-left(for='ya_form_summa') Сумма (руб.)
+                        input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_summa(type='text', name='sum', value='22900', disabled)
 
-                        label.uk-form-label.uk-text-left(for='ya_form_phone') Введите Ваш телефон
+                        label.form__zakaz-label.uk-text-left(for='ya_form_phone') Введите Ваш телефон
                         input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_phone.phonemask(type='text', name='cps_phone', placeholder='Ваш телефон')
 
-                        label.uk-form-label.uk-text-left(for='ya_form_name') Введите Ваше имя
+                        label.form__zakaz-label.uk-text-left(for='ya_form_name') Введите Ваше имя
                         input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_name(type='text', name='custName', placeholder='Ваше имя')
 
-                        label.uk-form-label.uk-text-left(for='ya_form_mail') Введите Ваш email
+                        label.form__zakaz-label.uk-text-left(for='ya_form_mail') Введите Ваш email
                         input.form__zakaz-input.uk-form-large.uk-width-medium-1-1.uk-width-small-1-1#ya_form_mail(type='text', name='custEmail', placeholder='Ваш email')
-                        | Способ оплаты:
+
+                        .form__zakaz-label Способ оплаты:
+                        label.lbl__paytype.lbl__paytype-yamoney(title='Со счета в Яндекс.Деньгах')
+                            input(name='paymentType', value='PC', type='radio', checked='checked')
+                        label.lbl__paytype.lbl__paytype-card(title='С банковской карты')
+                            input(name='paymentType', value='AC', type='radio')
+                        label.lbl__paytype.lbl__paytype-webmoney(title='Со счета WebMoney')
+                            input(name='paymentType', value='WM', type='radio')
                         br
-                        input(name='paymentType', value='PC', type='radio', checked='checked')
-                        | Со счета в Яндекс.Деньгах (яндекс кошелек)
                         br
-                        input(name='paymentType', value='AC', type='radio')
-                        | С банковской карты
-                        br
-                        input(type='submit', value='Оплатить')
-                        br
+                        .uk-text-center
+                            input.uk-button.uk-button-large.uk-form-width-medium.uk-button-primary(type='submit', value='Оплатить')
 
         script(src="libs/jquery/jquery.min.js")
         script(src="libs/uikit/js_uikit/uikit.min.js")

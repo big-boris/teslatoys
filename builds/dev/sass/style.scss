@@ -173,9 +173,10 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
   border: 2px solid #EFEFEF;
   padding: 30px;
+  margin-bottom: 36px;
 }
 
 .s__form__zakaz-title {
@@ -210,6 +211,12 @@ html {
   padding-bottom: 18px;
 }
 
+.form__zakaz-label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'roboto-medium';
+}
+
 .form__zakaz-input {
   border: 2px solid #EFEFC8;
   outline: none;
@@ -220,6 +227,30 @@ html {
   font-family: 'roboto-medium';
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+.lbl__paytype {
+  display: inline-block;
+  cursor: pointer;
+}
+.lbl__paytype-card {
+  display: inline-block;
+  background: url('../img/payment_ico/card_visamaster_ico.png') no-repeat;
+  background-position: 18px 2px;
+  width: 80px;
+  height: 20px;
+}
+.lbl__paytype-yamoney {
+  background: url('../img/payment_ico/yamoney_ico.png') no-repeat;
+  background-position: 18px -2px;
+  width: 80px;
+  height: 20px;
+}
+.lbl__paytype-webmoney {
+  background: url('../img/payment_ico/webmoney_ico.png') no-repeat;
+  background-position: 18px 2px;
+  width: 80px;
+  height: 20px;
 }
 
 .ya__money__frame {
