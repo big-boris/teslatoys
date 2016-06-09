@@ -55,6 +55,7 @@ function myScrollTo(o) {
   }, 1500);
 };
 
+// Tozhe rabochij variant
 // $(function () {
 //   $(window).scroll(function(){
 //     if ( $(this).scrollTop() > 100 ) {
