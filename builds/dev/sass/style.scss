@@ -198,9 +198,15 @@ html {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 400px;
   border: 2px solid #EFEFEF;
   padding: 30px;
   margin: 36px auto;
+}
+@media screen and (max-width: 425px){
+  .s__form__zakaz {
+    width: 210px;
+  }
 }
 
 .s__form__zakaz-title {
