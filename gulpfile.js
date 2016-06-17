@@ -24,13 +24,13 @@ gulp.task('jade', function(){
 });
 
 gulp.task('sass', function () {
-  gulp.src(['builds/dev/sass/fonts.scss','builds/dev/sass/style_finpravok.scss'])
+  gulp.src('builds/dev/sass/*.scss')
       .pipe(sass())
       .pipe(autoprefixer({
             browsers: ['last 10 versions','> 5%'],
             cascade: false
         }))
-      .pipe(concat('style_finpravok.css'))
+      .pipe(concat('style.css'))
       .pipe(gulp.dest('builds/dist/css/'));
 });
 
