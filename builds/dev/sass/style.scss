@@ -6,9 +6,26 @@ html {
   color: #444444;
 }
 
-#modal_order_form input[type="submit"] {
+.modalform-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 18px auto 28px !important;
+}
+
+.modalform-label {
+  margin-bottom: 6px;
+}
+
+.modalform-control {
+  // width: -webkit-calc(100% - 40px);
+  // width: calc(100% - 40px);
+  width: 100%;
+}
+
+#modalform input[type="submit"] {
   color: #FFFFFF;
 }
+
 
 .alert {
   border-color: #ED143D !important;
@@ -62,7 +79,7 @@ html {
   font: normal 28px 'helvetica_neue_cyr-bold';
   color: #000;
   margin-top: -14px;
-
+  cursor: pointer;
   span {
     font: normal 11px 'helvetica_neue_cyr-regular';
   }
@@ -85,6 +102,30 @@ html {
   .menu__phone {
     margin-top: -12px;
     font-size: 20px;
+  }
+}
+
+.reg_testdrive {
+  position: absolute;
+  left: 10%;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // padding-top: 16px;
+  padding-top: 4px;
+  // width: 100%; ispolzovat bez left-position
+  // text-align: center;
+  font-family: 'exo2-medium';
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #BD6896;
+  cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  .reg_testdrive {
+    left: 5%; // ubrat pri ispolzovanii width 100%
+    font-size: 12px;
+    padding-top: 0;
   }
 }
 
@@ -220,17 +261,6 @@ html {
 
 .footer__copyright {
   padding-top: 14px;
-}
-
-.order_mdlform-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 18px auto 28px !important;
-}
-
-.order_mdlform-control {
-  width: -webkit-calc(100% - 40px);
-  width: calc(100% - 40px);
 }
 
 .s__form__zakaz {

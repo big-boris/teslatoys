@@ -46,6 +46,14 @@ $(document).ready(function(){
     });
   });
 
+  $('.reg_testdrive').on('click', function() {
+    $('.modalform-title').text('Записаться на тест-драйв');
+  });
+
+  $('.menu__phone').on('click', function() {
+    $('.modalform-title').text('Заказать звонок');
+  });
+
 });
 
 function myScrollTo(o) {

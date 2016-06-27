@@ -31,6 +31,19 @@ html(lang="ru")
                             .uk-form-row
                                 input.uk-button.uk-button-large.uk-button-primary(type="submit" value="Оставить заявку")
 
+        .uk-modal#modalform
+            .uk-modal-dialog.uk-modal-dialog-medium
+                a.uk-modal-close.uk-close
+                .modalform-title.uk-text-center Оформить заявку
+                form(action="")
+                    .uk-form
+                        fieldset.uk-text-center
+                            .uk-form-row
+                                .modalform-label.uk-text-left(for='modalform_phone') Введите Ваш телефон
+                                input.modalform-control#modalform_phone.phonemask(type='text' name='phone' placeholder='Ваш телефон')
+                            .uk-form-row
+                                input.uk-button.uk-button-large.uk-button-primary(type="submit" value="Оставить заявку")
+
         .menu
             .uk-container.uk-container-center
                 .uk-grid(data-uk-grid-margin)
@@ -43,10 +56,12 @@ html(lang="ru")
                             a(href='javascript:void(0);' onclick="myScrollTo('delivery');") Доставка
                         .menu__nav-item
                             a(href='javascript:void(0);' onclick="myScrollTo('map');") Контакты
-                    .menu__phone.uk-width-medium-1-4
+                    .menu__phone.uk-width-medium-1-4(data-uk-modal="{target:'#modalform'}")
                         span Закажите по телефону:
                         br
                         | 8 495 627-69-88
+
+        .reg_testdrive(data-uk-modal="{target:'#modalform'}") Записаться на тест-драйв
 
         img(src="img/utp_img-2.jpg" width="100%" alt="Teslatoys - гироскутеры с доставкой")
         //- .uk-container.uk-container-center
