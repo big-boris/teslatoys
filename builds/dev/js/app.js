@@ -51,7 +51,18 @@ $(document).ready(function(){
   });
 
   $('.menu__phone').on('click', function() {
-    $('.modalform-title').text('Заказать звонок');
+    $('.modalform-title').text('Оформить заказ');
+  });
+
+  $('.js-modalform_valid').submit(function(event) {
+    var modalform_phone = $("#modalform_phone");
+    if(!$(modalform_phone).val() ) {
+      $(modalform_phone).addClass("alert");
+      setTimeout(function() {
+        $(modalform_phone).removeClass("alert");
+      },2000);
+      event.preventDefault();
+    }
   });
 
 });
