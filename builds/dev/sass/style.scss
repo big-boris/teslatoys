@@ -47,6 +47,17 @@ html {
   padding: 14px 0px;
 }
 
+.menu_fixed {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  // visibility: hidden;
+  background-color: #00B2EE;
+  padding: 14px 0px;
+}
+
 .menu__title {
   padding-top: 4px;
 }

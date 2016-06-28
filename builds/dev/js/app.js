@@ -35,8 +35,14 @@ $(document).ready(function(){
     $(window).scroll(function(){
       if ( $(this).scrollTop() > 100 ) {
         $('.scroll-to-top').fadeIn();
+        // $('.menu_fixed').show();
+        // $('.menu_fixed').fadeIn();
+        $('.menu_fixed').css('display','block');
       } else {
         $('.scroll-to-top').fadeOut();
+        // $('.menu_fixed').hide();
+        // $('.menu_fixed').fadeOut();
+        $('.menu_fixed').css('display','none');
       }
     });
 
