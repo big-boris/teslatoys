@@ -34,7 +34,7 @@ html(lang="ru")
         .uk-modal#modalform
             .uk-modal-dialog.uk-modal-dialog-medium
                 a.uk-modal-close.uk-close
-                .modalform-title.uk-text-center Оформить заказ
+                .modalform-title.uk-text-center Заказать звонок
                 form.js-modalform_valid(action="")
                     .uk-form
                         fieldset.uk-text-center
@@ -56,9 +56,8 @@ html(lang="ru")
                             a(href='javascript:void(0);' onclick="myScrollTo('delivery');") Доставка
                         .menu__nav-item
                             a(href='javascript:void(0);' onclick="myScrollTo('map');") Контакты
-                    .menu__phone.uk-width-medium-1-4(data-uk-modal="{target:'#modalform'}") 8 495 627-69-88
-                        br
-                        span Позвоните мне
+                    .menu__phone.uk-width-medium-1-4 8 495 627-69-88
+                        span.menu__phone_callme(data-uk-modal="{target:'#modalform'}") Позвоните мне
 
         .menu_fixed
             .uk-container.uk-container-center
@@ -72,12 +71,10 @@ html(lang="ru")
                             a(href='javascript:void(0);' onclick="myScrollTo('delivery');") Доставка
                         .menu__nav-item
                             a(href='javascript:void(0);' onclick="myScrollTo('map');") Контакты
-                    .menu__phone.uk-width-medium-1-4(data-uk-modal="{target:'#modalform'}")
-                        span Позвоните мне:
-                        br
-                        | 8 495 627-69-88
+                    .menu__phone.uk-width-medium-1-4 8 495 627-69-88
+                        span.menu__phone_callme(data-uk-modal="{target:'#modalform'}") Позвоните мне
 
-        .reg_testdrive(data-uk-modal="{target:'#modalform'}") Записаться на тест-драйв
+        //- .reg_testdrive(data-uk-modal="{target:'#modalform'}") Записаться на тест-драйв
 
         img(src="img/utp_img-2.jpg" width="100%" alt="Teslatoys - гироскутеры с доставкой")
         //- .uk-container.uk-container-center

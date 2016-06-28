@@ -52,13 +52,15 @@ $(document).ready(function(){
     });
   });
 
-  $('.reg_testdrive').on('click', function() {
-    $('.modalform-title').text('Записаться на тест-драйв');
-  });
+  // *** nuzhen dlya dinamicheskoj smeny zagolovka
+  // $('.reg_testdrive').on('click', function() {
+  //   $('.modalform-title').text('Записаться на тест-драйв');
+  // });
 
-  $('.menu__phone').on('click', function() {
-    $('.modalform-title').text('Оформить заказ');
-  });
+  // $('.menu__phone_callme').on('click', function() {
+  //   $('.modalform-title').text('Оформить заказ');
+  // });
+  // *** nuzhen dlya dinamicheskoj smeny zagolovka
 
   $('.js-modalform_valid').submit(function(event) {
     var modalform_phone = $("#modalform_phone");

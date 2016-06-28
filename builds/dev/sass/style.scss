@@ -87,11 +87,13 @@ html {
 
 .menu__phone {
   font: normal 28px 'helvetica_neue_cyr-bold';
+  line-height: 0.8;
   color: #000;
-  margin-top: -14px;
-  cursor: pointer;
-  span {
-    // display: inline-block;
+  // margin-top: -14px;
+  // cursor: pointer;
+}
+.menu__phone_callme {
+    display: inline-block;
     // border-radius: 4px;
     // width: 100%;
     // margin-top: 4px;
@@ -100,10 +102,11 @@ html {
     // background-color: #FF5D40;
     font: normal 12px 'helvetica_neue_cyr-medium';
     text-transform: uppercase;
+    border-bottom: 1px dashed;
     text-align: center;
     letter-spacing: 1px;
     // color: #FFFFFF;
-  }
+    cursor: pointer;
 }
 
 @media (max-width: 425px) {
