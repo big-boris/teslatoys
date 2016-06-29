@@ -184,7 +184,8 @@ html {
 
 .testdrive {
   display: block;
-  height: 524px;
+  height: auto;
+  padding: 36px 0;
   background: url("../img/testdrive.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -225,10 +226,10 @@ html {
 // }
 
 #testdriveform_phone {
-  width: calc(100% - 80px);
+  width: calc(100% - 40px);
 }
 #testdrive__form-button {
-  width: calc(100% - 80px);
+  width: calc(100% - 40px);
   background-color: #F2164A;
   border-color: #F2164A;
   outline: none;
@@ -237,12 +238,25 @@ html {
   // text-align: center;
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+  .testdrive__title {
+    padding: 18px 16px 10px;
+    font-size: 24px;
+  }
+  .testdrive__text {
+    font-size: 16px;
+  }
   #testdriveform_phone, #testdrive__form-button {
     width: calc(100% - 40px);
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+  .testdrive__title {
+    font-size: 20px;
+  }
+  .testdrive__text {
+    font-size: 14px;
+  }
   #testdriveform_phone, #testdrive__form-button {
     width: 100%;
     font-size: 12px;
