@@ -129,30 +129,6 @@ html {
   }
 }
 
-.reg_testdrive {
-  position: absolute;
-  left: 10%;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // padding-top: 16px;
-  padding-top: 4px;
-  // width: 100%; ispolzovat bez left-position
-  // text-align: center;
-  font-family: 'exo2-medium';
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #BD6896;
-  cursor: pointer;
-}
-@media screen and (max-width: 425px) {
-  .reg_testdrive {
-    left: 5%; // ubrat pri ispolzovanii width 100%
-    font-size: 12px;
-    padding-top: 0;
-  }
-}
-
 .utp__left {
   padding-top: 48px;
   padding-left: 32px;
@@ -219,21 +195,21 @@ html {
 .testdrive__unit {
   // width: 800px;
   // height: 524px;
-  width: calc(100% - 40px);
+  width: calc(80% - 40px);
   margin-left: auto;
   margin-right: auto;
   background-color: #FFF;
 }
 
 .testdrive__title {
-  padding-top: 36px;
-  margin-bottom: 27px;
-  font: normal 34px 'helvetica_neue_cyr-bold';
+  padding: 24px 16px 18px;
+  font: normal 26px 'helvetica_neue_cyr-bold';
 }
 
 .testdrive__text {
-  font: normal 20px 'helvetica_neue_cyr-regular';
   margin: 8px 0;
+  padding-left: 16px;
+  font: normal 18px 'helvetica_neue_cyr-regular';
   &--last {
     margin-bottom: 24px;
   }
@@ -258,15 +234,18 @@ html {
   outline: none;
   color: #FFF;
   text-transform: uppercase;
+  // text-align: center;
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   #testdriveform_phone, #testdrive__form-button {
     width: calc(100% - 40px);
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   #testdriveform_phone, #testdrive__form-button {
     width: 100%;
+    font-size: 12px;
   }
 }
 
