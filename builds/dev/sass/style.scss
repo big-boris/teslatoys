@@ -124,15 +124,16 @@ html {
 
 @media screen and (max-width: 768px) {
   .menu__phone {
-    padding-left: 14px !important;
+    padding-left: 14px;
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .menu__phone {
-    // margin-top: -12px;
-    font-size: 20px;
+    padding-left: 12px;
+    font-size: 18px;
+    line-height: 1.1;
   }
 }
 
@@ -217,6 +218,7 @@ html {
 .testdrive__text {
   margin: 8px 0;
   padding-left: 16px;
+  // padding-right: 4px;
   font: normal 18px 'helvetica_neue_cyr-regular';
   &--last {
     margin-bottom: 24px;
@@ -238,10 +240,10 @@ html {
 #testdrive__form-button {
   width: calc(100% - 40px);
   background-color: #F2164A;
-  border-color: #F2164A;
+  // border-color: #F2164A;
+  border: none;
   outline: none;
   color: #FFF;
-  text-transform: uppercase;
   // text-align: center;
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
