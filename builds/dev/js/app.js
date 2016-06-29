@@ -73,6 +73,18 @@ $(document).ready(function(){
     }
   });
 
+  $('.js-testdriveform_valid').submit(function(event) {
+      var testdriveform_phone = $("#testdriveform_phone");
+      if(!$(testdriveform_phone).val() ) {
+        console.log('Testrim');
+        $(testdriveform_phone).addClass("alert2");
+        setTimeout(function() {
+          $(testdriveform_phone).removeClass("alert2");
+        },2000);
+        event.preventDefault();
+      }
+    });
+
 });
 
 function myScrollTo(o) {

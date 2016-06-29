@@ -32,6 +32,13 @@ html {
   color: #ED143D !important;
 }
 
+.alert2 {
+  border-color: #ED143D !important;
+  &::placeholder {
+    color: #ED143D;
+  }
+}
+
 .section_even {
   padding-top: 36px;
 }
@@ -251,6 +258,9 @@ html {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+  .testdrive__unit {
+    width: 100%;
+  }
   .testdrive__title {
     font-size: 20px;
   }
@@ -259,7 +269,8 @@ html {
   }
   #testdriveform_phone, #testdrive__form-button {
     width: 100%;
-    font-size: 12px;
+    // font-size: 12px;
+    margin-top: 8px;
   }
 }
 
