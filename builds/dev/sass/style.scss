@@ -206,6 +206,70 @@ html {
   }
 }
 
+.testdrive {
+  display: block;
+  height: 524px;
+  background: url("../img/testdrive.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #000;
+}
+
+.testdrive__unit {
+  // width: 800px;
+  // height: 524px;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+}
+
+.testdrive__title {
+  padding-top: 36px;
+  margin-bottom: 27px;
+  font: normal 34px 'helvetica_neue_cyr-bold';
+}
+
+.testdrive__text {
+  font: normal 20px 'helvetica_neue_cyr-regular';
+  margin: 8px 0;
+  &--last {
+    margin-bottom: 24px;
+  }
+}
+
+.testdrive__form {
+  padding: 26px 0;
+  background-color: #999;
+}
+
+// .testdrive__form-control {
+//   width: 100px;
+// }
+
+#testdriveform_phone {
+  width: calc(100% - 80px);
+}
+#testdrive__form-button {
+  width: calc(100% - 80px);
+  background-color: #F2164A;
+  border-color: #F2164A;
+  outline: none;
+  color: #FFF;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #testdriveform_phone, #testdrive__form-button {
+    width: calc(100% - 40px);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  #testdriveform_phone, #testdrive__form-button {
+    width: 100%;
+  }
+}
+
 .product__img-thumb {
   width: 80px;
   height: 100%;

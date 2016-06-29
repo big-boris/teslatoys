@@ -98,6 +98,32 @@ html(lang="ru")
                     .utp__present Сумка:
                         span.utp__present-guarbag &nbsp;В подарок
 
+        .testdrive
+            .uk-container.uk-container-center
+                .uk-grid
+                    .uk-width-medium-1-1.uk-width-small-1-1
+                        .testdrive__unit
+                            .testdrive__title Записаться на тест-драйв
+                            .testdrive__text Испытайте любую модель гироскутеров в действии.
+                            .testdrive__text Выберите ту, которая подходит именно вам по скорости и размерам.
+                            .testdrive__text Научитесь управлять гироскутером за 10 минут.
+                            .testdrive__text.testdrive__text--last Узнайте все необходимое о гироскутерах у нашего специалиста.
+                            .testdrive__form
+                                //- form.js-testdriveform_valid(action="")
+                                //-     .uk-container.uk-container-center
+                                //-         .uk-grid
+                                //-             input.testdrive__form-control#testdriveform_phone.phonemask.uk-width-medium-1-2.uk-width-small-1-1(type='text' name='phone' placeholder='Ваш телефон')
+                                //-             input.testdrive__form-button.uk-width-medium-1-2.uk-width-small-1-1(type="submit" value="Записаться на тест-драйв")
+                                .form.uk-form
+                                    .uk-form-row
+                                        .uk-form-controls
+                                            .uk-container.uk-container-center
+                                                .uk-grid
+                                                    .uk-width-medium-1-2.uk-width-small-1-1.uk-text-right.uk-text-center-small
+                                                        input.uk-form-large#testdriveform_phone.phonemask(type='text' name='phone' placeholder='Ваш телефон')
+                                                    .uk-width-medium-1-2.uk-width-small-1-1.uk-text-left.uk-text-center-small
+                                                        input.uk-form-large#testdrive__form-button(type="submit" value="Записаться на тест-драйв")
+
 
         .section_even
             .uk-container.uk-container-center.uk-margin-top.uk-margin-large-bottom

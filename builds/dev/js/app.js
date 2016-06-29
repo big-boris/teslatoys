@@ -52,7 +52,7 @@ $(document).ready(function(){
     });
   });
 
-  // *** nuzhen dlya dinamicheskoj smeny zagolovka
+  // *** nuzhen dlya dinamicheskoj smeny zagolovka modali
   // $('.reg_testdrive').on('click', function() {
   //   $('.modalform-title').text('Записаться на тест-драйв');
   // });
@@ -60,7 +60,7 @@ $(document).ready(function(){
   // $('.menu__phone_callme').on('click', function() {
   //   $('.modalform-title').text('Оформить заказ');
   // });
-  // *** nuzhen dlya dinamicheskoj smeny zagolovka
+  // *** nuzhen dlya dinamicheskoj smeny zagolovka modali
 
   $('.js-modalform_valid').submit(function(event) {
     var modalform_phone = $("#modalform_phone");
